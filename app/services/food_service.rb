@@ -1,7 +1,7 @@
 class FoodService
   def conn
     Faraday.new(url: "https://api.nal.usda.gov/fdc/v1") do |faraday|
-      faraday.params["X-Api-Key"] = ENV["food_key"]
+      faraday.params["api_key"] = ENV["food_key"]
     end
   end
 
