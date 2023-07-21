@@ -13,4 +13,8 @@ class FoodService
   def food_search(food)
     get_url("foods/search?query=#{food}&dataType=&pageSize=10&pageNumber=2&sortBy=dataType.keyword&sortOrder=asc")
   end
+
+  def fetch_food(id)
+    get_url("/foods?fdcIds=#{id}")
+  end
 end
