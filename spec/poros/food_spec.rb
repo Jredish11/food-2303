@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Movie do
+RSpec.describe Food do
   before(:each) do
 
   end
